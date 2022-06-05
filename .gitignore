@@ -1,52 +1,22 @@
-# Prerequisites
-*.d
+#include <stdio.h>
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+int main()
+{
+    
+    int vektor1[2],vektor2[2],vektor3[2];
+    int a,b,toplam;
 
-# Linker output
-*.ilk
-*.map
-*.exp
+    printf("Birinci vektoru giriniz:");
+    scanf("%d%d",&vektor1[0],&vektor1[1]);
+    printf("Ikinci vektoru giriniz:");
+    scanf("%d%d",&vektor2[0],&vektor2[1]);
 
-# Precompiled Headers
-*.gch
-*.pch
+    vektor3[0] = vektor1[0] + vektor2[0];
+    vektor3[1] = vektor1[1] + vektor2[1];
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+    printf("(%d,%d) + (%d,%d) = (%d,%d)",vektor1[0],vektor1[1],vektor2[0],vektor2[1],vektor3[0],vektor3[1]);
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+    return 0;
+}
